@@ -24,7 +24,7 @@
   let fuzzySearch: FuzzySearcher<Waifu> | null = null;
 
   onMount(async () => {
-    allWaifus = (await d3.csv("./waifus.csv")) as unknown as Waifu[];
+    allWaifus = (await d3.csv("https://raw.githubusercontent.com/tybantarnusa/waifulist/refs/heads/main/public/waifus.csv")) as unknown as Waifu[];
     allWaifus.sort(() => Math.random() - 0.5);
 
     fuzzySearch = createFuzzySearch(allWaifus, {

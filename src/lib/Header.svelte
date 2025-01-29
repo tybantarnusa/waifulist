@@ -1,5 +1,5 @@
 <div class="box">
-  <p class="header-title">tybantarnusa's Waifu List</p>
+  <button type="button" class="header-title" onclick={() => { window.location.reload() }}>tybantarnusa's Waifu List</button>
 </div>
 
 <style>
